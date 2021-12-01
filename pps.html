@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <title>Tabela Personalizada</title>
+                
+    <link rel="stylesheet" href="pps.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    
+    
+</head>
+    
+<body onload="onLoadingSetFocus()">
+    
+    <div class="outer-wrap">
+
+        <header class="site-header">            
+            <img src="logos/memobluevvvvText.png" alt="logo">
+            <div class="naves"><a href="Index.html">Memo-Forcing</a></div>
+        </header><!-- .site-header -->
+
+        <div class="content-area">
+            <main class="main-content-area">
+                <div class="table-container">
+                    
+                    <h1 class="heading">Personal Pronouns</h1>
+
+                    <div class="resultadosInfos">
+                        <h2 class = "Resultadoh2" id="resultadoP"></h2>
+                        <h2 class = "Resultadoh2" id="contagemRodadas"></h2>
+                    </div>    
+                    <div class="textAndBtns">
+                        <input type="text" placeholder="Pergunta" name="inputa" id="inputa" autocomplete="off" onkeypress="setFocusResposta()">
+                        <input type="text" placeholder="Resposta" name="inputb" id="inputb" autocomplete="off" onkeypress="iniciarFaseTestOrdenado()">                       
+                        <button type="button" id="getRowBtn" class="btnEdit" onclick="activeSpeaker2();listen.play()"><i class="fas fa-bullhorn"></i></button>
+                    </div>
+                    
+                    <table class="table" name="tabelaa" id="tabelaa">
+                        <thead>
+                            <tr>                                
+                                <th>Pergunta</th>
+                                <th>Resposta</th>                                                
+                            </tr>
+                        </thead>
+                        <tbody name="tabelaabody" id="tabelaabody" class="tabelaabody">
+                            <tr>
+                                <td>Eu quero trabalhar</td>
+                                <td>I want to work</td>  
+                            </tr>
+                            <tr>
+                                <td>Você não está dormindo</td>
+                                <td>You are not sleeping</td>  
+                            </tr>
+                            <tr>                                
+                                <td>Ele gosta de mim</td>
+                                <td>He likes me</td>                                                                                         
+                            </tr>
+                            <tr>
+                                <td>Ela não me ama</td>
+                                <td>She doesn't love me</td>                                                                                          
+                            </tr>
+                            <tr>
+                                <td>Não funciona</td>
+                                <td>It doesn't work</td>  
+                            </tr>
+                            <tr>
+                                <td>Estamos bem</td>
+                                <td>We are OK</td>                                                                             
+                            </tr>
+                            <tr>
+                                <td>Vocês estão errados</td>
+                                <td>You are wrong</td>  
+                            </tr>
+                            <tr>
+                                <td>Eles me ligaram</td>
+                                <td>They called me</td>  
+                            </tr>
+                            <tr>
+                                <td>Elas te desejam o melhor</td>
+                                <td>They wish you the best</td>  
+                            </tr>                            
+                        </tbody>
+                    </table>
+                    <div class="btns">
+                        <button type="button" class="btnVerde" id="iniciarTestBtn" onclick="iniciarTest()">Iniciar Test ordenado</button>
+                        <button type="button" class="btnVerdeClaro" id="iniciarTestNoRandoBtn" onclick="iniciarTestNoRandom()">Iniciar Test no Random</button>
+                        <button type="button" class="btnOrange"  id="conferirErrosBtn" onclick="conferirErros()">Conferir erros</button>
+                        <button type="button" class="btnOrangeClaro" id="recomecarDoZeroBtn" onclick="recomecarDoZero()">Recomençar do zero</button> 
+                        <button type="button" class="btnVerdeDark" id="inverterColunasBtn" onclick="inverterColunas()">Inverter Colunas</button> 
+                        <button type="button" class="btnOrangeDark" onclick="clearTudo()">Apagar Tudo</button>                         
+                    </div>
+                </div>    
+            </main>
+
+            
+        
+
+       
+
+    </div><!-- .outer-wrap -->
+    
+    <script src="pps.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <!-- Our Script File -->
+    <script type="text/javascript" src="js/main.js"></script>  
+
+</body>
+
+</html>
+
