@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <title>Tabela Personalizada</title>
+                
+    <link rel="stylesheet" href="personov.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    
+    
+</head>
+    
+<body onload="onLoadingSetFocus()">
+    
+    <div class="outer-wrap">
+
+        <header class="site-header">            
+            <img src="logos/memobluevvvvText.png" alt="logo">
+            <div class="naves"><a href>Memo-Forcing</a></div>
+        </header><!-- .site-header -->
+
+        <div class="content-area">
+            <main class="main-content-area">
+                <div class="table-container">
+                    
+                    <h1 class="heading">Tabela Personalizada</h1>
+
+                    <div class="resultadosInfos">
+                        <h2 class = "Resultadoh2" id="resultadoP"></h2>
+                        <h2 class = "Resultadoh2" id="contagemRodadas"></h2>
+                    </div>    
+                    <div class="textAndBtns">
+                        <input type="text" placeholder="Pergunta" name="inputa" id="inputa" autocomplete="off" onkeypress="setFocusResposta()">
+                        <input type="text" placeholder="Resposta" name="inputb" id="inputb" autocomplete="off" onkeypress="btnAddRow()"> 
+                        
+                            <button type="button" id="getRowBtn" class="btnEdit" onclick="getRow()"><i class="fab fa-get-pocket"></i></i></i></button>
+                            <button type="button" id="editRowBtn" class="btnEdit" onclick="editRow()"><i class="fas fa-user-edit"></i></i></button>
+                            <button type="button" id="insertRowBtn" class="btnEdit" onclick="insertRow()"><i class="fas fa-user-plus"></i></i></i></button>
+                            <button type="button" id="deleteTableRowBtn" class="btnEdit" onclick="deleteTableRow()"><i class="fas fa-trash-alt"></i></button>
+                         
+                    </div>
+                    
+                    <table class="table" name="tabelaa" id="tabelaa">
+                        <thead>
+                            <tr>
+                                <th>Pergunta</th>
+                                <th>Resposta</th>                                
+                            </tr>
+                        </thead>
+                        <tbody name="tabelaabody" id="tabelaabody" class="tabelaabody">
+                            
+                        </tbody>
+                    </table>
+                    <div class="btns">
+                        <button type="button" class="btnVerde" id="iniciarTestBtn" onclick="iniciarTest()">Iniciar Test ordenado</button>
+                        <button type="button" class="btnVerdeClaro" id="iniciarTestNoRandoBtn" onclick="iniciarTestNoRandom()">Iniciar Test no Random</button>
+                        <button type="button" class="btnOrange"  id="conferirErrosBtn" onclick="conferirErros()">Conferir erros</button>
+                        <button type="button" class="btnOrangeClaro" id="recomecarDoZeroBtn" onclick="recomecarDoZero()">Recomençar do zero</button> 
+                        <button type="button" class="btnVerdeDark" id="inverterColunasBtn" onclick="inverterColunas()">Inverter Colunas</button> 
+                        <button type="button" class="btnOrangeDark" onclick="clearTudo()">Apagar Tudo</button>                         
+                    </div>
+                </div>    
+            </main>
+
+            
+        
+
+       
+
+    </div><!-- .outer-wrap -->
+    
+    <script src="personov.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <!-- Our Script File -->
+    <script type="text/javascript" src="js/main.js"></script>  
+
+</body>
+
+</html>
+
