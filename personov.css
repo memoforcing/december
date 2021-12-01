@@ -1,0 +1,514 @@
+/*--------------------------------------------------------------
+Base styles
+--------------------------------------------------------------*/
+body,
+/*button,*/
+/*input,*/
+textarea {
+	color: black;
+	font-family: 'Asap', sans-serif;
+	font-size: 16px;
+	line-height: 0.8;    
+}
+
+body {
+	background-color: #EDEDED;
+	margin: 0;
+	font-family: 'Asap', sans-serif;
+}
+
+
+
+.site-header {
+    background-color: rgb(34, 209, 157);
+    height: 100px;
+    text-align: center;
+    display: flex;
+}
+
+img{
+    /* opacity: 0.2;*/
+     display: block;
+     margin-left: 5%;
+     /*margin-right: auto;*/
+     max-width: 100%;
+     max-height: 100%;
+ }
+
+ .naves{
+    color: rgb(4, 4, 43);
+    font-weight: bold;
+    font-size: 40px;
+	line-height: 0.8;    
+    margin-left: 20%;
+    margin-top: 2%;
+ }
+
+ .naves a{
+    text-decoration: none;
+    color: rgb(4, 4, 43);    
+ }
+
+ .naves a:hover{
+     background: rgb(34, 209, 157);
+ } 
+
+
+
+
+i{
+    color: #ff1046;
+}
+
+
+
+/*--------------------------------*/
+.mainn{
+    margin-top: 20px;
+    margin-left: 100px;
+    width: 70%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    font-family: sans-serif;
+	color: #555;
+
+   	line-height: 1.6em;
+	/*text-align: center;*/
+	height: 3000px;  
+}
+/*--------------------------------*/
+
+.p1{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.p1 img {
+    width: 100px;
+    height: 60px;
+    margin-left: 250px;
+    margin-top: 0;
+}
+
+/*--------------------------------*/
+
+.sidebar-right {
+    /*position: fixed;*/
+    left: -250px;
+    width: 350px;
+    height: 100%;
+    background: #060014;
+    font-style: italic;
+    background-image: url(imgs/neuronesoctoberDARKED.png);
+    margin-top: 2px;
+}
+
+.sidebar-right header{
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    
+    user-select: none;
+}
+
+.sidebar-right ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 14px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+}
+
+ul li:hover a{
+    padding-left: 50px;
+} 
+
+.sidebar ul a i{
+    margin-right: 16px;
+}
+
+
+#check{
+    display: none;
+}
+
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+    background: rgb(4, 4, 43);
+	margin: 0;
+}
+h1 {
+	color: rgb(4, 4, 43);
+	margin: 0;
+   
+}
+
+.Resultadoh2{
+    color: chartreuse;
+    text-align: center;
+}
+
+p {
+	margin: 0;
+}
+
+input[type=text] {
+	width: 40%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	margin-left: 50px;
+	box-sizing: border-box;
+	text-align: left;
+	/*display: block;
+    margin : 0 auto;*/	
+  }
+
+  .resultadosInfos{
+      display: flex;
+      justify-content: space-between;  
+  }
+
+  .btnEdit{
+      width: 30px;
+      height: 43px;
+      margin-left: 5px;
+      background-color: rgb(34, 209, 157);
+  }
+
+ 
+
+
+
+@media screen and (min-width: 1120px) {
+
+    
+
+	.content-area {
+		display: flex;
+	}
+
+	.sidebar-right {
+		flex: 0 0 320px;
+        
+	}
+
+	.main-content-area {
+		width: 100%;
+	}
+}
+
+.table-container{
+    padding: 0 10%;
+    margin: 40px auto 0;
+}
+
+.heading{
+    font-size: 40px;
+    text-align: center;
+    /*color: #f1f1f1;*/
+    margin-bottom: 40px;
+}
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    
+}
+
+.table thead{
+    background-color: rgb(34, 209, 157);;
+}
+
+.table thead tr th{
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.35px;
+    color: rgb(4, 4, 43);
+    opacity: 1;
+    padding: 12px;
+    vertical-align: top;
+    border: 1px solid #dee2e685;
+    height: 12px;
+}
+
+.table tbody tr td{
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    font-weight: bold;
+    color: rgb(4, 4, 43);
+    background-color:white;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid rgb(4, 4, 43);
+    height: 12px;
+}
+
+.table .text_open{
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.35;
+    color: #ff1046;    
+}
+
+.table tbody tr td .btn{
+    width: 130px;
+    text-decoration: none;
+    line-height: 35px;
+    display: inline-block;
+    background-color: #ff1046;
+    font-weight: medium;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    font-size: 14px;
+    opacity: 1;
+}
+
+
+
+.table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+  }
+
+  tr:hover td {
+    background: #c7d4dd !important;
+    cursor: pointer
+}
+
+
+
+
+.btns{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+button {    
+    width: 40%;
+    margin-top: 5px;
+    height: 40px;
+}
+
+.btnVerde{
+    background-color: rgb(34, 209, 157);
+    color: rgb(3, 3, 53);
+    font-weight: bolder;
+    border-radius: 1%;
+}
+
+.btnOrange{
+    background-color: rgb(34, 209, 157);
+    color: rgb(3, 3, 53);
+    font-weight: bolder;
+    border-radius: 1%;
+}
+
+.btnVerdeClaro{
+    background-color: rgb(34, 209, 157);
+    color: rgb(3, 3, 53);
+    font-weight: bolder;
+    border-radius: 1%;
+}
+
+.btnOrangeClaro{
+    background-color: rgb(34, 209, 157);
+    color: rgb(3, 3, 53);
+    font-weight: bolder;
+    border-radius: 1%;
+}
+
+.btnVerdeDark{
+    background-color: rgb(34, 209, 157);
+    color: rgb(3, 3, 53);
+    font-weight: bolder;
+    border-radius: 1%;
+}
+
+.btnOrangeDark{
+    background-color: rgb(34, 209, 157);
+    color: rgb(3, 3, 53);
+    font-weight: bolder;
+    border-radius: 1%;
+} 
+
+.textAndBtns{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.btnEdit{
+    width: 60px;
+    margin-top: 8px;    
+}
+
+@media (max-width: 1120px){
+
+    .naves{
+        font-size: 25px;
+        margin-left: 20%;
+        margin-top: 8%;
+    }
+    
+    .textAndBtns{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+
+
+    .sidebar-right{
+        width: 100%;
+
+    }
+
+    .sidebar-right ul a{
+        padding-left: 120px;  
+        font-size: 18px; 
+    }
+   
+	
+
+	input[type=text] {
+		width: 100%;
+		display: block;
+    	margin : 0 auto;
+        margin-bottom: 5px;
+	}
+    .btns{
+        display: flex;
+        flex-direction: column;
+    }
+    button {
+        width: 100%;
+    }
+
+    .textAndBtns button{
+        width: 95%;        
+    }
+
+    .btnEdit{
+       margin-bottom: 5px;
+    }
+    
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+nav{
+  background: #0082e6;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: #f2f2f2;
+  font-size: 33px;
+  line-height: 80px;
+  padding: 0 140px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+nav ul{
+  float: right;
+  margin-right: 60px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 2px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  /* text-transform: uppercase; */
+  font-family: 'Poppins', sans-serif;
+}
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 27px;
+    padding-left: 25px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+    margin-right: 40px;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+
+
+
+
+
+
