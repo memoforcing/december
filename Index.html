@@ -1,40 +1,319 @@
 <!DOCTYPE html>
-<html lang="en-US">
-    
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-    <title>Tabela Personalizada</title>
-                
-    <link rel="stylesheet" href="personov.css" type="text/css" media="all">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    
-    
-</head>
-    
-<body onload="onLoadingSetFocus()">
-    
-    <div class="outer-wrap">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Architect Website</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,400;0,600;1,300;1,400;1,600&family=Muli:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="spinner-container">
+      <div class="circles">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
 
-        <header class="site-header">            
-            <img src="logos/memobluevvvvText.png" alt="logo">
-            <div class="naves"><a href>Memo-Forcing</a></div>
-        </header><!-- .site-header -->
+    <div class="container">
+      <div class="hamburger-menu">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+        <span>Close</span>
+      </div>
+      <header class="header">
+        <div class="img-wrapper">
+          <img src="images/neuronesoctober.jpg" />
+        </div>
+        <div class="banner">
+          <h1>MemoForcing & Treinamento</h1>
+          <p>Nunca mais esqueça nada graças ao método da MemoForcing</p>
+          <button>Assiste ao nosso Video</button>
+        </div>
+      </header>
+      
+      
 
-        <div class="content-area">
-            <main class="main-content-area">
-                
-            </main>
-        </div><!-- .outer-wrap -->
-    
-    <script src="personov.js"></script>
-    <!-- jQuery -->
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <!-- Our Script File -->
-    <script type="text/javascript" src="js/main.js"></script>  
+      <section class="sidebar">
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="#" class="menu-link" data-content="Home">Home</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link" data-content="About Us">About Us</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link" data-content="Team">Team</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link" data-content="Pricing">Pricing</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link" data-content="Contact">Contact</a>
+          </li>
+        </ul>
+        <div class="social-media">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </section>
 
-</body>
+      
 
+      <section class="about-us">
+        <div class="section-header">
+          <h1 class="section-heading">Sobre Memorização</h1>
+          <div class="underline"></div>
+        </div>
+        <div class="services">
+          <div class="service">
+            <div class="service-header">
+              <i class="fas fa-pen-nib"></i>
+              <h3>É difícil memorizar?</h3>
+            </div>
+            <p class="service-text">
+              A maioria das pessoas afirma ter dificuldades para memorizar e aprender novos conteúdos. 
+              Memorizar requer energia e força de vontade. 
+              Perdemos facilmente o foco devido às inúmeras distrações existentes ao nosso redor e o 
+              cérebro cansa rapidamente nas tentativas de superar-las.
+
+            </p>
+          </div>
+          <div class="service">
+            <div class="service-header">
+              <i class="fas fa-paint-roller"></i>
+              <h3>Nosso objetivo:</h3>
+            </div>
+            <p class="service-text">
+              O metodo Memoforcing pretende auxiliar o estudante na dificil e tediosa tarefa da memorização.
+              Que seja o vocabulario, uma lista de nomes, um código Morse, em suma, tudo o que está relacionado 
+              com a memorização
+            </p>
+          </div>
+          <div class="service">
+            <div class="service-header">
+              <i class="fas fa-pencil-alt"></i>
+              <h3>Memorizar é necessário?</h3>
+            </div>
+            <p class="service-text">
+              Como Einstein disse, se você não consegue explicar um conceito com suas próprias palavras, 
+              você não sabe o suficiente. É verdade se você estuda uma teoria, o funcionamento de uma célula
+              ou algo assim. Mas uma lista de vocabulário ou um texto que o palestrante ou ator deve citar
+               até a vírgula mais próxima? É neste ponto que a Memoforcing pode ajudar.
+
+            </p>
+          </div>
+          <div class="service">
+            <div class="service-header">
+              <i class="fas fa-paint-brush"></i>
+              <h3>Repetiçao é a chave da memorização</h3>
+            </div>
+            <p class="service-text">
+              Existem inúmeras maneiras de memorizar a matéria a ser aprendidoa alguns excelentes 
+              e eficientes, com eficiências demostradas, mas no site a Memo-Forcing oferecemos um método novo 
+              baseada nas repetições das correções dos erros cometidos até tudo ficar bem encorado na memória.    
+            </p>
+          </div>
+          <div class="service">
+            <div class="service-header">
+              <i class="fas fa-ruler-combined"></i>
+              <h3>Torna a memoria de curto em uma memória longo prazo</h3>
+            </div>
+            <p class="service-text">
+                Memorizando algo um dia e deixando de lado o assuunto memorizado fará que em breve você esquecerá grande
+                parte do assunto estudado.  Aplica o método Memoforcing consistentemente e você tornará seu aprenizado
+                em um longo prazo.
+            </p>
+          </div>
+          <div class="service">
+            <div class="service-header">
+              <i class="far fa-building"></i>
+              <h3>Memoria visual ou auditiva?</h3>
+            </div>
+            <p class="service-text">
+              Enquanto a memória visual significa a capacidade de recuperar informações de coisas que vimos,
+              a memória auditiva significa que você é capaz de receber informações que ouviu. 
+              Pretendemos na Memo-Forcing trabalhar as duas  tipos de memoria.               
+
+            </p>
+          </div>
+          <div class="about-us-img-wrapper">
+            <img src="images/bluebrain.png" />
+          </div>
+        </div>
+      </section>
+
+
+
+      <section class="videos">
+        <div class="containerB">
+          <h1>ENTENDA O MÉTODO MEMOFORCING:</h1>
+          <div class="row">
+              <div class="col">
+                  <div class="feature-img">
+                      <img src="media/pic1.png" width="100%">
+                      <img src="media/play.png" class="play-btn" onclick="playVideo('media/vid1.mp4')">
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="small-img-row">
+                      <div class="small-img">
+                          <img src="media/pic2.png">
+                          <img src="media/play.png"  class="play-btn"
+                          onclick="playVideo('media/vid2.mp4')">
+                      </div>
+                      <p classs="pp">Como criar sua tabela personalizada <br> e como praticar</p>
+                  </div>
+  
+                  <div class="small-img-row">
+                      <div class="small-img">
+                          <img src="media/pic3.png">
+                          <img src="media/play.png"  class="play-btn"
+                          onclick="playVideo('media/vid3.mp4')">
+                      </div>
+                      <p>Os tipos de tabelas da Memoforcing<br> O que fazer e o que não fazer</p>
+                  </div>
+  
+                  <div class="small-img-row">
+                      <div class="small-img">
+                          <img src="media/pic4.png">
+                          <img src="media/play.png"  class="play-btn"
+                          onclick="playVideo('media/vid4.mp4')">
+                      </div>
+                      <p>Como estudar capítulos inteiros <br> seguindo o método Memoforcing.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      <div class="video-player" id="videoPlayer">
+          <video width="100%" controls autoplay  id="myVideo">
+              <source src="media/vid1.mp4" type="video/mp4"> 
+          </video>
+          <img src="media/close.png" class="close-btn" onclick="stopVideo()">
+      </div>
+
+
+      </section>
+
+
+
+
+
+            
+      <section class="team">
+        <div class="section-header">
+          <h1 class="section-heading">O Team da Memo-Forcing</h1>
+          <div class="underline"></div>
+        </div>
+        <div class="cards-wrapper">
+          <div class="card" data-tilt>
+            <div class="card-img-wrapper">
+              <img src="images/isy.jfif" alt="CEO" />
+            </div>
+            <div class="card-info">
+              <h2>Isaac Franken</h2>
+              <h3>CEO</h3>
+              <p>
+                "Desenvolvedor de Sistemas Front-End e Fundador do método Memoforcing."
+              </p>
+              <button>Read More</button>
+            </div>
+          </div>
+          <div class="card" data-tilt>
+            <div class="card-img-wrapper">
+              <img src="images/luciana.jfif" alt="Designer" />
+            </div>
+            <div class="card-info">
+              <h2>Luciana Soares</h2>
+              <h3>Administradora</h3>
+              <p>
+                "Advogada e administradora da Memoforcing."
+              </p>
+              <button>Read More</button>
+            </div>
+          </div>
+          <div class="card" data-tilt>
+            <div class="card-img-wrapper">
+              <img src="images/person-3.jpg" alt="Architect" />
+            </div>
+            <div class="card-info">
+              <h2>Mary Doe</h2>
+              <h3>Architect</h3>
+              <p>
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores, impedit!"
+              </p>
+              <button>Read More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="contact-wrapper">
+          <div class="contact-left"></div>
+          <div class="contact-right">
+            <h1 class="contact-heading">Contact</h1>
+            <form>
+              <div class="input-group">
+                <input type="text" class="field" />
+                <label class="input-label">Full Name</label>
+              </div>
+              <div class="input-group">
+                <input type="email" class="field" />
+                <label class="input-label">Email</label>
+              </div>
+              <div class="input-group">
+                <textarea class="field"></textarea>
+                <label class="message">Message</label>
+              </div>
+              <input type="submit" class="submit-btn" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-content">
+          <p class="copyright">
+            Copyright &copy; 2020, CodeAndCreate - All Rights Reserved
+          </p>
+          <div class="social-list">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </footer>
+      <a href="#" class="scroll-btn">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+
+    <script src="indexVideo.js"></script>
+    <script src="index.js"></script>    
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="indextilt.js"></script>
+  </body>
 </html>
-

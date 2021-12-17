@@ -514,6 +514,58 @@ function activeSpeaker2(){
     } 
 }
 
+var getAux1 = [];
+var getAux2 = [];
+function inverterColunas(){            
+    var table = document.getElementById('tabelaa');
+        
+    for (var i = 1; i < table.rows.length; i++)
+        {      
+            getAux1.push(table.rows[i].cells[0].innerHTML);
+            getAux2.push(table.rows[i].cells[1].innerHTML);                       
+        }  
+        console.log("inverterColunas() = " + getAux1);
+        console.log("inverterColunas() = " + getAux2); 
+    
+        //---------------------------------------------------- deletando tabela antiga
+    
+        var  tamanhoTabela = tabelaa.rows.length;
+    console.log("tamanhoTabela = " + tamanhoTabela);
+    while (tamanhoTabela > 1) 
+            {
+                document.getElementById("tabelaa").deleteRow(1);
+                tamanhoTabela = tamanhoTabela - 1; 
+            }
+    
+        //----------------------------------------------------
+        
+        
+    var tabelaabody = document.getElementsByName('tabelaabody')[0];
+    
+    console.log("getAux2.length = " + getAux2.length);
+    
+    
+    
+    for(i = 0; i < getAux2.length; i++){        
+    
+        var portV = getAux2[i];
+        var englV = getAux1[i];
+        console.log("portV = " + portV);
+        console.log("englV = " + englV); 
+    
+        var newRow = tabelaabody.insertRow(i);
+    
+        var cell1 = newRow.insertCell(0);
+        var cell2 = newRow.insertCell(1);
+    
+        cell1.innerHTML = portV;
+        cell2.innerHTML = englV;
+    
+    }   
+    getAux1 = [];
+    getAux2 = [];
+    }  
+
 
 
 

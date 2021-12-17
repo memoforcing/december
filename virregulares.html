@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <title>Tabela Personalizada</title>
+                
+    <link rel="stylesheet" href="virregulares.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    
+    
+</head>
+    
+<body onload="onLoadingSetFocus()">
+    
+    <div class="outer-wrap">
+
+        <header class="site-header">            
+            <img src="logos/memobluevvvvText.png" alt="logo">
+            <div class="naves"><a href>Memo-Forcing</a></div>
+        </header><!-- .site-header -->
+
+        <div class="content-area">
+            <main class="main-content-area">
+                <div class="table-container">
+                    
+                    <h1 class="heading">Verbos irregulares</h1>
+
+                    <div class="resultadosInfos">
+                        <h2 class = "Resultadoh2" id="resultadoP"></h2>
+                        <h2 class = "Resultadoh2" id="contagemRodadas"></h2>
+                    </div>    
+                    <div class="textAndBtns">
+                        <input type="text" placeholder="Português" name="inputa" id="inputa" autocomplete="off" onkeypress="setFocusResposta()">
+                        <input type="text" placeholder="Infinitivo" name="inputb" id="inputb" autocomplete="off" onkeypress="setFocusRespostaC()"> 
+                        <input type="text" placeholder="Passado" name="inputc" id="inputc" autocomplete="off" onkeypress="setFocusRespostaD()">
+                        <input type="text" placeholder="Participio" name="inputd" id="inputd" autocomplete="off" onkeypress="iniciarFaseTestOrdenado()"> 
+                        
+                            <button type="button" id="deleteTableRowBtn" class="btnEdit" onclick="deleteTableRow()"><i class="fas fa-trash-alt"></i></button>
+                            <button type="button" id="getRowBtn" class="btnEdit" onclick="activeSpeaker2();listen.play()"><i class="fas fa-bullhorn"></i></button>
+                    </div>
+                    
+                    <table class="table" name="tabelaa" id="tabelaa">
+                        <thead>
+                            <tr>
+                                <th>Português</th>
+                                <th>Infinitivo</th>
+                                <th>Passado</th>    
+                                <th>Participo</th>                            
+                            </tr>
+                        </thead>
+                        <tbody name="tabelaabody" id="tabelaabody" class="tabelaabody">
+                            <tr>
+                                <td>levantar</td>
+                                <td>arise</td>
+                                <td>arose</td>    
+                                <td>arisen</td>                            
+                            </tr>
+                            <tr>
+                                <td>acordar</td>
+                                <td>awake</td>
+                                <td>awoke</td>    
+                                <td>awoken</td>                            
+                            </tr>
+                            <tr>
+                                <td>ser/estar</td>
+                                <td>be</td>
+                                <td>was were</td>    
+                                <td>been</td>                            
+                            </tr>
+                            <tr>
+                                <td>suportar</td>
+                                <td>bear</td>
+                                <td>bore</td>    
+                                <td>born</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>bater</td>
+                                <td>beat</td>
+                                <td>beat</td>    
+                                <td>beaten</td>                            
+                            </tr>
+                            <tr>
+                                <td>tornar-se</td>
+                                <td>become</td>
+                                <td>became</td>    
+                                <td>become</td>                            
+                            </tr>
+                            <tr>
+                                <td>começar</td>
+                                <td>begin</td>
+                                <td>began</td>    
+                                <td>begun</td>                            
+                            </tr>
+                            <tr>
+                                <td>curvar</td>
+                                <td>bend</td>
+                                <td>bent</td>    
+                                <td>bent</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>apostar</td>
+                                <td>bet</td>
+                                <td>bet</td>    
+                                <td>bet</td>                            
+                            </tr>
+                            <tr>
+                                <td>oferecer</td>
+                                <td>bid</td>
+                                <td>bade</td>    
+                                <td>bidden</td>                            
+                            </tr>
+                            <tr>
+                                <td>amarrar</td>
+                                <td>bind</td>
+                                <td>bound</td>    
+                                <td>bound</td>                            
+                            </tr>
+                            <tr>
+                                <td>morder</td>
+                                <td>bite</td>
+                                <td>bit</td>    
+                                <td>bitten</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>sangrar</td>
+                                <td>bleed</td>
+                                <td>bled</td>    
+                                <td>bled</td>                            
+                            </tr>
+                            <tr>
+                                <td>soprar</td>
+                                <td>blow</td>
+                                <td>blew</td>    
+                                <td>blown</td>                            
+                            </tr>
+                            <tr>
+                                <td>quebrar</td>
+                                <td>break</td>
+                                <td>broke</td>    
+                                <td>broken</td>                            
+                            </tr>
+                            <tr>
+                                <td>procriar</td>
+                                <td>breed</td>
+                                <td>bred</td>    
+                                <td>bred</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>trazer</td>
+                                <td>bring</td>
+                                <td>brought</td>    
+                                <td>brought</td>                            
+                            </tr>
+                            <tr>
+                                <td>construir</td>
+                                <td>build</td>
+                                <td>built</td>    
+                                <td>built</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>queimar*</td>
+                                <td>burn</td>
+                                <td>burnt</td>    
+                                <td>burnt</td>                            
+                            </tr>
+                            <tr>
+                                <td>explodir*</td>
+                                <td>burst</td>
+                                <td>burst</td>    
+                                <td>burst</td>                            
+                            </tr>
+                            <tr>
+                                <td>comprar</td>
+                                <td>buy</td>
+                                <td>bought</td>    
+                                <td>bought</td>                            
+                            </tr>
+                           
+                            <tr>
+                                <td>pegar*</td>
+                                <td>catch</td>
+                                <td>caught</td>    
+                                <td>caught</td>                            
+                            </tr>
+                            <tr>
+                                <td>escolher</td>
+                                <td>choose</td>
+                                <td>chose</td>    
+                                <td>chosen</td>                            
+                            </tr>
+                            <tr>
+                                <td>aderir</td>
+                                <td>cling</td>
+                                <td>clung</td>    
+                                <td>clung</td>                            
+                            </tr>
+                            
+                            <tr>
+                                <td>vir</td>
+                                <td>come</td>
+                                <td>came</td>    
+                                <td>come</td>                            
+                            </tr>
+                            <tr>
+                                <td>custar</td>
+                                <td>cost</td>
+                                <td>cost</td>    
+                                <td>cost</td>                            
+                            </tr>
+                            <tr>
+                                <td>lançar</td>
+                                <td>cast</td>
+                                <td>cast</td>    
+                                <td>cast</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>cacarejar</td>
+                                <td>crow</td>
+                                <td>crew</td>    
+                                <td>crowed</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>engatinhar</td>
+                                <td>creep</td>
+                                <td>crept</td>    
+                                <td>crept</td>                            
+                            </tr>
+                            <tr>
+                                <td>cortar</td>
+                                <td>cut</td>
+                                <td>cut</td>    
+                                <td>cut</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>negociar</td>
+                                <td>deal</td>
+                                <td>dealt</td>    
+                                <td>dealt</td>                            
+                            </tr>
+                            <tr>
+                                <td>cavar</td>
+                                <td>dig</td>
+                                <td>dug</td>    
+                                <td>dug</td>                            
+                            </tr>
+                            <tr>
+                                <td>fazer</td>
+                                <td>do</td>
+                                <td>did</td>    
+                                <td>done</td>                            
+                            </tr>
+                            <tr>
+                                <td>desenhar*</td>
+                                <td>draw</td>
+                                <td>drew</td>    
+                                <td>drawn</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>beber</td>
+                                <td>drink</td>
+                                <td>drank</td>    
+                                <td>drunk</td>                            
+                            </tr>
+                            <tr>
+                                <td>dirigir</td>
+                                <td>drive</td>
+                                <td>drove</td>    
+                                <td>driven</td>                            
+                            </tr>
+                            <tr>
+                                <td>residir</td>
+                                <td>dwell</td>
+                                <td>dwelt</td>    
+                                <td>dwelt</td>                            
+                            </tr>
+                            
+                            <tr>
+                                <td>comer</td>
+                                <td>eat</td>
+                                <td>ate</td>    
+                                <td>eaten</td>                            
+                            </tr>
+
+
+
+
+
+                            <tr>
+                                <td>cair</td>
+                                <td>fall</td>
+                                <td>fell</td>    
+                                <td>fallen</td>                            
+                            </tr>
+                            <tr>
+                                <td>alimentar</td>
+                                <td>feed</td>
+                                <td>fed</td>    
+                                <td>fed</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>sentir</td>
+                                <td>feel</td>
+                                <td>felt</td>    
+                                <td>felt</td>                            
+                            </tr>
+                            <tr>
+                                <td>lutar</td>
+                                <td>fight</td>
+                                <td>fought</td>    
+                                <td>fought</td>                            
+                            </tr>
+                            <tr>
+                                <td>achar</td>
+                                <td>find</td>
+                                <td>found</td>    
+                                <td>found</td>                            
+                            </tr>
+                            <tr>
+                                <td>fugir</td>
+                                <td>flee</td>
+                                <td>fled</td>    
+                                <td>fled</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>arremessar</td>
+                                <td>fling</td>
+                                <td>flung</td>    
+                                <td>flung</td>                            
+                            </tr>
+                            <tr>
+                                <td>voar</td>
+                                <td>fly</td>
+                                <td>flew</td>    
+                                <td>flown</td>                            
+                            </tr>
+                            <tr>
+                                <td>proibir</td>
+                                <td>forbid</td>
+                                <td>forbade</td>    
+                                <td>forbidden</td>                            
+                            </tr>
+                            
+                            <tr>
+                                <td>esquecer</td>
+                                <td>forget</td>
+                                <td>forgot</td>    
+                                <td>forgotten</td>                            
+                            </tr>
+                            
+                            <tr>
+                                <td>perdoar</td>
+                                <td>forgive</td>
+                                <td>forgave</td>    
+                                <td>forgiven</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>congelar</td>
+                                <td>freeze</td>
+                                <td>froze</td>    
+                                <td>frozen</td>                            
+                            </tr>
+                            <tr>
+                                <td>dirigir</td>
+                                <td>drive</td>
+                                <td>drove</td>    
+                                <td>driven</td>                            
+                            </tr>
+                            <tr>
+                                <td>obter*</td>
+                                <td>get</td>
+                                <td>got</td>    
+                                <td>gotten</td>                            
+                            </tr>
+                            
+                            <tr>
+                                <td>dar</td>
+                                <td>give</td>
+                                <td>gave</td>    
+                                <td>given</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>ir</td>
+                                <td>go</td>
+                                <td>went</td>    
+                                <td>gone</td>                            
+                            </tr>
+                            <tr>
+                                <td>crescer</td>
+                                <td>grow</td>
+                                <td>grew</td>    
+                                <td>grown</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>pendurar</td>
+                                <td>hang</td>
+                                <td>hung</td>    
+                                <td>hung</td>                            
+                            </tr>
+                            <tr>
+                                <td>ter</td>
+                                <td>have</td>
+                                <td>had</td>    
+                                <td>had</td>                            
+                            </tr>
+                            
+                            <tr>
+                                <td>ouvir</td>
+                                <td>hear</td>
+                                <td>heard</td>    
+                                <td>heard</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>puxar</td>
+                                <td>heave</td>
+                                <td>hove</td>    
+                                <td>hove</td>                            
+                            </tr>
+                            <tr>
+                                <td>esconder</td>
+                                <td>hide</td>
+                                <td>hid</td>    
+                                <td>hidden</td>                            
+                            </tr>
+                            <tr>
+                                <td>bater/atingir</td>
+                                <td>hit</td>
+                                <td>hit</td>    
+                                <td>hit</td>                            
+                            </tr>
+                            
+                            <tr>
+                                <td>segurar</td>
+                                <td>hold</td>
+                                <td>held</td>    
+                                <td>held</td>                            
+                            </tr>
+
+
+
+
+
+                            <tr>
+                                <td>machucar</td>
+                                <td>hurt</td>
+                                <td>hurt</td>    
+                                <td>hurt</td>                            
+                            </tr>
+                            <tr>
+                                <td>manter</td>
+                                <td>keep</td>
+                                <td>kept</td>    
+                                <td>kept</td>                            
+                            </tr>
+                            <tr>
+                                <td>ajoelhar</td>
+                                <td>kneel</td>
+                                <td>knelt</td>    
+                                <td>knelt</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>tricotar</td>
+                                <td>knit</td>
+                                <td>knit</td>    
+                                <td>knit</td>                            
+                            </tr>
+                            <tr>
+                                <td>saber</td>
+                                <td>know</td>
+                                <td>knew</td>    
+                                <td>known</td>                            
+                            </tr>
+                            <tr>
+                                <td>pôr</td>
+                                <td>lay</td>
+                                <td>laid</td>    
+                                <td>laid</td>                            
+                            </tr>
+                            
+                            <tr>
+                                <td>conduzir</td>
+                                <td>lead</td>
+                                <td>led</td>    
+                                <td>led</td>                            
+                            </tr>
+                            
+                            <tr>
+                                <td>pular</td>
+                                <td>leap</td>
+                                <td>leapt</td>    
+                                <td>leapt</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>aprender</td>
+                                <td>learn</td>
+                                <td>learnt</td>    
+                                <td>learnt</td>                            
+                            </tr>
+                            <tr>
+                                <td>deixar/abandonar</td>
+                                <td>leave</td>
+                                <td>left</td>    
+                                <td>left</td>                            
+                            </tr>
+                            <tr>
+                                <td>emprestar</td>
+                                <td>lend</td>
+                                <td>lent</td>    
+                                <td>lent</td>                            
+                            </tr>
+                            
+                            <tr>
+                                <td>deixar*</td>
+                                <td>let</td>
+                                <td>let</td>    
+                                <td>let</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>deitar/colocar</td>
+                                <td>lie</td>
+                                <td>lay</td>    
+                                <td>lain</td>                            
+                            </tr>
+                            <tr>
+                                <td>ascender</td>
+                                <td>light</td>
+                                <td>lit</td>    
+                                <td>lit</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>pendurar</td>
+                                <td>hang</td>
+                                <td>hung</td>    
+                                <td>hung</td>                            
+                            </tr>
+                            <tr>
+                                <td>perder</td>
+                                <td>lose</td>
+                                <td>lost</td>    
+                                <td>lost</td>                            
+                            </tr>
+                            
+                            <tr>
+                                <td>fazer/criar</td>
+                                <td>make</td>
+                                <td>made</td>    
+                                <td>made</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>significar</td>
+                                <td>mean</td>
+                                <td>meant</td>    
+                                <td>meant</td>                            
+                            </tr>
+                            <tr>
+                                <td>encontrar</td>
+                                <td>meet</td>
+                                <td>met</td>    
+                                <td>met</td>                            
+                            </tr>
+                            <tr>
+                                <td>participar</td>
+                                <td>partake</td>
+                                <td>partook</td>    
+                                <td>partaken</td>                            
+                            </tr>
+                            
+                            <tr>
+                                <td>pagar</td>
+                                <td>pay</td>
+                                <td>paid</td>    
+                                <td>paid</td>                            
+                            </tr>
+
+
+
+
+                            
+                            <tr>
+                                <td>colocar</td>
+                                <td>put</td>
+                                <td>put</td>    
+                                <td>put</td>                            
+                            </tr>
+                            
+                            <tr>
+                                <td>desistir*</td>
+                                <td>quit</td>
+                                <td>quit</td>    
+                                <td>quit</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>ler</td>
+                                <td>read</td>
+                                <td>read</td>    
+                                <td>read</td>                            
+                            </tr>
+                            <tr>
+                                <td>andar de</td>
+                                <td>ride</td>
+                                <td>rode</td>    
+                                <td>ridden</td>                            
+                            </tr>
+                            <tr>
+                                <td>soar</td>
+                                <td>ring</td>
+                                <td>rang</td>    
+                                <td>rung</td>                            
+                            </tr>
+                            
+                            <tr>
+                                <td>aumentar*</td>
+                                <td>rise</td>
+                                <td>rose</td>    
+                                <td>risen</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>correr</td>
+                                <td>run</td>
+                                <td>ran</td>    
+                                <td>run</td>                            
+                            </tr>
+                            <tr>
+                                <td>serrar</td>
+                                <td>saw</td>
+                                <td>sawed</td>    
+                                <td>sawn</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>dizer</td>
+                                <td>say</td>
+                                <td>said</td>    
+                                <td>said</td>                            
+                            </tr>
+                            <tr>
+                                <td>ver</td>
+                                <td>see</td>
+                                <td>saw</td>    
+                                <td>seen</td>                            
+                            </tr>
+                            
+                            <tr>
+                                <td>procurar*</td>
+                                <td>seek</td>
+                                <td>sought</td>    
+                                <td>sought</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>vender</td>
+                                <td>sell</td>
+                                <td>sold</td>    
+                                <td>sold</td>                            
+                            </tr>
+                            <tr>
+                                <td>ajustar</td>
+                                <td>set</td>
+                                <td>set</td>    
+                                <td>set</td>                            
+                            </tr>
+                            <tr>
+                                <td>costurar</td>
+                                <td>sew</td>
+                                <td>sewed</td>    
+                                <td>sewn</td>                            
+                            </tr>
+                            
+                            <tr>
+                                <td>agitar*</td>
+                                <td>shake</td>
+                                <td>shook</td>    
+                                <td>shaken</td>                            
+                            </tr>
+
+
+
+
+
+
+                            
+                                                 
+                            <tr>
+                                <td>derramar</td>
+                                <td>shed</td>
+                                <td>shed</td>    
+                                <td>shed</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>brilhar</td>
+                                <td>shine</td>
+                                <td>shone</td>    
+                                <td>shone</td>                            
+                            </tr>
+                            <tr>
+                                <td>atirar</td>
+                                <td>shoot</td>
+                                <td>shot</td>    
+                                <td>shot</td>                            
+                            </tr>
+                            <tr>
+                                <td>mostrar</td>
+                                <td>show</td>
+                                <td>showed</td>    
+                                <td>shown</td>                            
+                            </tr>
+                            
+                            <tr>
+                                <td>despedaçar</td>
+                                <td>shred</td>
+                                <td>shred</td>    
+                                <td>shred</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>contrair</td>
+                                <td>shrink</td>
+                                <td>shrank</td>    
+                                <td>shrunk</td>                            
+                            </tr>
+                            <tr>
+                                <td>fechar</td>
+                                <td>shut</td>
+                                <td>shut</td>    
+                                <td>shut</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>cantar</td>
+                                <td>sing</td>
+                                <td>sang</td>    
+                                <td>sung</td>                            
+                            </tr>
+                            <tr>
+                                <td>afundar</td>
+                                <td>sink</td>
+                                <td>sank</td>    
+                                <td>sunk</td>                            
+                            </tr>
+                            
+                            <tr>
+                                <td>sentar-se</td>
+                                <td>sit</td>
+                                <td>sat</td>    
+                                <td>sat</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>matar</td>
+                                <td>slay</td>
+                                <td>slew</td>    
+                                <td>slain</td>                            
+                            </tr>
+                            <tr>
+                                <td>dormir</td>
+                                <td>sleep</td>
+                                <td>slept</td>    
+                                <td>slept</td>                            
+                            </tr>
+                            <tr>
+                                <td>escorregar</td>
+                                <td>slide</td>
+                                <td>slid</td>    
+                                <td>slid</td>                            
+                            </tr>
+                            
+                            <tr>
+                                <td>atirar**</td>
+                                <td>sling</td>
+                                <td>slung</td>    
+                                <td>slung</td>                            
+                            </tr>
+
+
+                            <tr>
+                                <td>cheirar</td>
+                                <td>smell</td>
+                                <td>smelt</td>    
+                                <td>smelt</td>                            
+                            </tr>
+                            
+                            <tr>
+                                <td>espancar</td>
+                                <td>smite</td>
+                                <td>smote</td>    
+                                <td>smitten</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>semear</td>
+                                <td>sow</td>
+                                <td>sowed</td>    
+                                <td>sown</td>                            
+                            </tr>
+                            <tr>
+                                <td>falar</td>
+                                <td>speak</td>
+                                <td>spoke</td>    
+                                <td>spoken</td>                            
+                            </tr>
+                            <tr>
+                                <td>soletrar</td>
+                                <td>spell</td>
+                                <td>spelt</td>    
+                                <td>spelt</td>                            
+                            </tr>
+                            
+                            <tr>
+                                <td>gastar</td>
+                                <td>spend</td>
+                                <td>spent</td>    
+                                <td>spent</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>derramar*</td>
+                                <td>spill</td>
+                                <td>spilt</td>    
+                                <td>spilt</td>                            
+                            </tr>
+                            <tr>
+                                <td>girar</td>
+                                <td>spin</td>
+                                <td>spun</td>    
+                                <td>spun</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>cuspir</td>
+                                <td>spit</td>
+                                <td>spat</td>    
+                                <td>spat</td>                            
+                            </tr>
+                            <tr>
+                                <td>mimar</td>
+                                <td>spoil</td>
+                                <td>spoilt</td>    
+                                <td>spoilt</td>                            
+                            </tr>
+                            
+                            <tr>
+                                <td>espalhar</td>
+                                <td>spread</td>
+                                <td>spread</td>    
+                                <td>spread</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>saltar</td>
+                                <td>spring</td>
+                                <td>sprang</td>    
+                                <td>sprung</td>                            
+                            </tr>
+                            <tr>
+                                <td>ficar em pé</td>
+                                <td>stand</td>
+                                <td>stood</td>    
+                                <td>stood</td>                            
+                            </tr>
+                            <tr>
+                                <td>roubar</td>
+                                <td>steal</td>
+                                <td>stole</td>    
+                                <td>stolen</td>                            
+                            </tr>
+                            
+                            <tr>
+                                <td>travar</td>
+                                <td>stick</td>
+                                <td>stuck</td>    
+                                <td>stuck</td>                            
+                            </tr>
+                            
+                                                 
+                            <tr>
+                                <td>picar</td>
+                                <td>sting</td>
+                                <td>stung</td>    
+                                <td>stung</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>feder</td>
+                                <td>stink</td>
+                                <td>stank</td>    
+                                <td>stunk</td>                            
+                            </tr>
+                            <tr>
+                                <td>aspergir</td>
+                                <td>strew</td>
+                                <td>strewed</td>    
+                                <td>strewn</td>                            
+                            </tr>
+                            <tr>
+                                <td>cavalgar</td>
+                                <td>stride</td>
+                                <td>strode</td>    
+                                <td>stridden</td>                            
+                            </tr>
+                            
+                            <tr>
+                                <td>atacar</td>
+                                <td>strike</td>
+                                <td>struck</td>    
+                                <td>struck</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>amarrar*</td>
+                                <td>string</td>
+                                <td>strung</td>    
+                                <td>strung</td>                            
+                            </tr>
+                            <tr>
+                                <td>esforçar-se</td>
+                                <td>strive</td>
+                                <td>strove</td>    
+                                <td>striven</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>jurar</td>
+                                <td>swear</td>
+                                <td>swore</td>    
+                                <td>sworn</td>                            
+                            </tr>
+                            <tr>
+                                <td>suar</td>
+                                <td>sweat</td>
+                                <td>sweat</td>    
+                                <td>sweat</td>                            
+                            </tr>
+                            
+                            <tr>
+                                <td>varrer</td>
+                                <td>sweep</td>
+                                <td>swept</td>    
+                                <td>swept</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>inchar</td>
+                                <td>swell</td>
+                                <td>swelled</td>    
+                                <td>swollen</td>                            
+                            </tr>
+                            <tr>
+                                <td>nadar</td>
+                                <td>swim</td>
+                                <td>swam</td>    
+                                <td>swum</td>                            
+                            </tr>
+                            <tr>
+                                <td>balançar</td>
+                                <td>swing</td>
+                                <td>swung</td>    
+                                <td>swung</td>                            
+                            </tr>
+                            
+                            <tr>
+                                <td>pegar</td>
+                                <td>take</td>
+                                <td>took</td>    
+                                <td>taken</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>ensinar</td>
+                                <td>teach</td>
+                                <td>taught</td>    
+                                <td>taught</td>                            
+                            </tr>
+
+
+                            
+                            <tr>
+                                <td>rasgar</td>
+                                <td>tear</td>
+                                <td>tore</td>    
+                                <td>torn</td>                            
+                            </tr>
+                            
+                                                 
+                            <tr>
+                                <td>contar</td>
+                                <td>tell</td>
+                                <td>told</td>    
+                                <td>told</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>pensar</td>
+                                <td>think</td>
+                                <td>thought</td>    
+                                <td>thought</td>                            
+                            </tr>
+                            <tr>
+                                <td>prosperar</td>
+                                <td>thrive</td>
+                                <td>throve</td>    
+                                <td>thriven</td>                            
+                            </tr>
+                            <tr>
+                                <td>jogar</td>
+                                <td>throw</td>
+                                <td>threw</td>    
+                                <td>thrown</td>                            
+                            </tr>
+                            
+                            <tr>
+                                <td>empurrar</td>
+                                <td>thrust</td>
+                                <td>thrust</td>    
+                                <td>thrust</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>entender</td>
+                                <td>understand</td>
+                                <td>understood</td>    
+                                <td>understood</td>                            
+                            </tr>
+                            <tr>
+                                <td>acordar*</td>
+                                <td>wake</td>
+                                <td>woke</td>    
+                                <td>waken</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>vestir</td>
+                                <td>wear</td>
+                                <td>wore</td>    
+                                <td>worn</td>                            
+                            </tr>
+                            <tr>
+                                <td>tecer</td>
+                                <td>weave</td>
+                                <td>wove</td>    
+                                <td>woven</td>                            
+                            </tr>
+                            
+                            <tr>
+                                <td>chorar</td>
+                                <td>weep</td>
+                                <td>wept</td>    
+                                <td>wept</td>                            
+                            </tr>
+
+                            <tr>
+                                <td>molhar</td>
+                                <td>wet</td>
+                                <td>wet</td>    
+                                <td>wet</td>                            
+                            </tr>
+                            <tr>
+                                <td>vencer</td>
+                                <td>win</td>
+                                <td>won</td>    
+                                <td>won</td>                            
+                            </tr>
+                            <tr>
+                                <td>ventilar</td>
+                                <td>wind</td>
+                                <td>wound</td>    
+                                <td>wound</td>                            
+                            </tr>
+                            
+                            <tr>
+                                <td>torcer</td>
+                                <td>wring</td>
+                                <td>wrung</td>    
+                                <td>wrung</td>                            
+                            </tr>                            
+
+                        </tbody>
+                    </table>
+                    <div class="btns">
+                        <button type="button" class="btnVerde" id="iniciarTestBtn" onclick="iniciarTest()">Iniciar Test ordenado</button>
+                        <button type="button" class="btnVerdeClaro" id="iniciarTestNoRandoBtn" onclick="iniciarTestNoRandom()">Iniciar Test no Random</button>
+                        <button type="button" class="btnOrange"  id="conferirErrosBtn" onclick="conferirErros()">Conferir erros</button>
+                        <button type="button" class="btnOrangeClaro" id="recomecarDoZeroBtn" onclick="recomecarDoZero()">Recomençar do zero</button> 
+                        <button type="button" class="btnVerdeDark" id="inverterColunasBtn" onclick="inverterColunas()">Inverter Colunas</button> 
+                        <button type="button" class="btnOrangeDark" onclick="clearTudo()">Apagar Tudo</button>                         
+                    </div>
+                </div>    
+            </main>
+
+            
+        
+
+       
+
+    </div><!-- .outer-wrap -->
+    
+    <script src="virregulares.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <!-- Our Script File -->
+    <script type="text/javascript" src="js/main.js"></script>  
+
+</body>
+
+</html>
+
